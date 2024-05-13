@@ -1,0 +1,9 @@
+[submodule "3rd_party/fmt"]
+	path = 3rd_party/fmt
+	url = https://github.com/fmtlib/fmt
+[submodule "3rd_party/yaml-cpp"]
+	path = 3rd_party/yaml-cpp
+	url = https://github.com/jbeder/yaml-cpp
+[submodule "3rd_party/spdlog"]
+	path = 3rd_party/spdlog
+	url = https://github.com/gabime/spdlog
