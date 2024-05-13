@@ -3,7 +3,7 @@ project(llvm-branch-pass)
 
 
 # https://github.com/banach-space/llvm-tutor/blob/main/CMakeLists.txt
-set(LT_LLVM_INSTALL_DIR "/usr/lib/llvm-18" CACHE PATH "LLVM installation directory")
+set(LT_LLVM_INSTALL_DIR "/usr/lib/llvm-14" CACHE PATH "LLVM installation directory")
 
 # 1.1 Check the "include" directory
 set(LT_LLVM_INCLUDE_DIR "${LT_LLVM_INSTALL_DIR}/include/llvm")
