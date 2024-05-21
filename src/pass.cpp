@@ -273,8 +273,11 @@ class BranchPass : public PassInfoMixin<BranchPass>
     FunctionWithBranches analyzeFunction(Function &f)
     {
         auto subprogram = f.getSubprogram();
+        if (!subprogram) {
+            spdlog::warn("Subprogram is NULL?!");
+            return FunctionWithBranches{};
+        }
         auto function_fn = subprogram->getFilename().str();
-        std::vector<FunctionWithBranches> out;
         auto function_name = f.getName().str();
         auto start_line = subprogram->getLine();
         auto last_line = this->last_line(f);
